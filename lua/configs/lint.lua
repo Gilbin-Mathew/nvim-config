@@ -1,13 +1,8 @@
 local lint = require("lint")
 
 lint.linters_by_ft = {
-    lua = { "luacheck" },
-}
-
-lint.linters.luacheck.args = {
-    unpack(lint.linters.luacheck.args),
-    "--globals",
-    "vim",
+    -- lua = {"luacheck"},
+    python = {"flake8"},
 }
 
 vim.api.nvim_create_autocmd({ "BufEnter", "BufWritePost", "InsertLeave" }, {

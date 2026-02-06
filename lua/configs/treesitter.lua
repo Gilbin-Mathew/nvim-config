@@ -1,6 +1,6 @@
-local options = {
-  ensure_installed = {
-    "asm",
+local options = {                   -- Treesitters are just parsers to know the grammar of the language 
+  ensure_installed = {              -- Here these are ensured installtion for highlighted
+    "asm",                          -- texts
     "bash",
     "c",
     "cpp",
