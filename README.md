@@ -9,3 +9,5 @@
 1) Lazyvim starter https://github.com/LazyVim/starter as nvchad's starter was inspired by Lazyvim's . It made a lot of things easier!
 
 Important message "" mason-lint config is not configured please manually download the linters using mason ""  Don't be panicked :)
+
+## just for a backup
