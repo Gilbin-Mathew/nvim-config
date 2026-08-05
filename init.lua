@@ -1,14 +1,16 @@
 require('options')
-require('treesitters')
+require('VimWindow')
 
 vim.cmd.colorscheme("default")
-
--- only load language specific after the colorscheme, else overriden
---
 vim.cmd("syntax on")
-require('VimWindow')
+
 require('defaultSyn')
 
+-- Load language specifc after the colorscheme and the default color
+require('treesitters')
 
--- interface
-vim.go.cmdheight = 0
+require('plugins')
+require('lspconfig')
+
+-- I think the keymaps should be loaded after the plugins and lsp because of the... Ahh! i forgot to say
+require('keymaps')

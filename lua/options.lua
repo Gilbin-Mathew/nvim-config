@@ -1,9 +1,8 @@
 local opt = vim.opt
 
 -- ui
-
-opt.background = "dark" 
 opt.termguicolors = true
+vim.go.cmdheight = 0
 
 -- basic settings
 opt.number = true                       -- line numbers
@@ -46,9 +45,10 @@ opt.iskeyword:append("-")                      -- Treat dash as part of word
 opt.path:append("**")                          -- include subdirectories in search
 opt.selection = "exclusive"                    -- Selection behavior
 opt.mouse = "a"                                -- Enable mouse support
-opt.clipboard:append("unnamedplus")            -- Use system clipboard
+opt.clipboard = "unnamedplus"                  -- Use system clipboard
 opt.modifiable = true                          -- Allow buffer modifications
 opt.encoding = "UTF-8"                         -- Set encoding
+vim.opt.shortmess:append("sWcAIS")             -- Don't show ins-completion-menu messages
 
 -- Cursor behaviour
 opt.selection = "inclusive"
